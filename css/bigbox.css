@@ -1,0 +1,96 @@
+@keyframes move1{
+	from{ right: 0px;}
+	to{ left: 900px;}
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.best-big-box{
+	width: 100%; height: 100%;
+	background-color: #FFFAFA;
+	position: absolute;
+}
+
+.best-big-box .title-box{
+	width: 500px; height: 100px;
+	background-color: #F08080;
+	position:absolute;
+	left: 50%; top: 85%;
+}
+
+.best-big-box .title2-box{
+	width: 1000px;
+	height: 50px;
+	background-color: #FA8072;
+	/* border: red solid 5px; */
+	position: relative;
+	left: 10px;
+	top: 10px;
+	animation-name: move1;  /* 动画名称 */
+	animation-duration: 5s;   /* 动画时间 */
+	animation-timing-function: ease-in-out;  /* 速度曲线 */
+	animation-delay: 0s; /* 动画过几秒开始 */
+	animation-iteration-count: 999; /* 循环播放几次动画 */
+	animation-direction: alternate; /* 动画是否原路返回 */
+}
+
+.best-big-box .title2-box span{
+	width: 100%; height: 100%;
+	display: inline-block;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+	line-height: 50px; 
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+/* 右边的大盒子 */
+.best-big-box .right-box{
+	width: 64%; height: 90%;
+	border: #FA8072 solid 10px;
+	position: absolute;
+	top: 30px ; right:30px;
+}
+
+/* 轮播图的盒子 */
+.best-big-box .Box-lpt{
+	width: 93.5%; height :20%;
+	/* border-bottom: #FA8072 solid 10px; */
+	/* border-radius: 30px; */
+	/* background-color: red; */
+	position: absolute;
+	top: 50px ; right:30px;
+	display: inline-block;
+}
+
+.best-big-box .Box-lpt>ul>li{
+	position: absolute;
+	 opacity: 0;   /* 图片透明度为0 */
+	 transition: all 1s;
+}
+
+.best-big-box .Box-lpt>ul>li:first-child{
+	 opacity: 1; 
+}
+
+.best-big-box .Box-lpt img{
+	width:70%; height: 50%;
+}
+
+/* gif */
+.best-big-box .right-box p{
+	width: 600px; height: 322px;
+	border: #FA8072 solid 10px;
+	margin: 350px auto;
+}
+
+.best-big-box .right-box p img{
+	width: 100%; height: 100%;
+}
